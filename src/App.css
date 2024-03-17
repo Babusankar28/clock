@@ -1,38 +1,64 @@
-.App {
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  transition: .2s all ease;
+
+}
+.container .clock-container {
+  width: 80%;
+  max-width: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: .2s all ease;
+  position: relative;
+}
+.container .clock-container .theme-btn {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+}
+.container .clock-container .theme-btn button {
+  padding: 8px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  transition: .2s all ease;
+  border: none;
+}
+.container .clock-container .clock {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+}
+.container .clock-container .clock .am {
+  float: right;
+  margin-left: 10px;
+  padding: 2px 5px;
+  font-weight: bold;
+  transition: .2s all ease;
+  font-size: 12px;
+}
+.container .clock-container .clock .timer {
+  gap: 10px;
+}
+.container .clock-container .clock .timer .card {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  transition: .2s all ease;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container .clock-container .clock .timer .card h2 {
+  font-weight: 500;
+  font-size: 32px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .clock-container .clock .timer .card p {
+  font-weight: 500;
+  font-size: 15px;
 }

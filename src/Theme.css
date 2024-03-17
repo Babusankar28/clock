@@ -1,0 +1,41 @@
+.light {
+  color: rgb(0, 0, 0);
+  background-color: rgb(235, 235, 235);
+}
+.light .clock-container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px 5px rgb(205, 205, 205);
+}
+.light .clock-container .theme-btn button {
+  background-color: rgb(20, 20, 20);
+  color: rgb(235, 235, 235);
+}
+.light .clock-container .clock .card {
+  background-color: rgb(235, 235, 235);
+  box-shadow: 1px 1px 5px 3px rgb(205, 205, 205);
+}
+.light .clock-container .clock .am {
+  background-color: rgb(20, 20, 20);
+  color: rgb(235, 235, 235);
+}
+
+.dark {
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
+}
+.dark .clock-container {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 10px 5px rgb(50, 50, 50);
+}
+.dark .clock-container .theme-btn button {
+  background-color: rgb(235, 235, 235);
+  color: rgb(20, 20, 20);
+}
+.dark .clock-container .clock .card {
+  background-color: rgb(20, 20, 20);
+  box-shadow: 1px 1px 5px 3px rgb(50, 50, 50);
+}
+.dark .clock-container .clock .am {
+  background-color: rgb(235, 235, 235);
+  color: rgb(20, 20, 20);
+}
